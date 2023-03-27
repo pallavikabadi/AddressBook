@@ -6,6 +6,26 @@ import java.util.Scanner;
 public class AddressBook {
     Scanner sc = new Scanner(System.in);
     ArrayList<Contact> addressBook1 = new ArrayList<>();
+    public AddressBook(String name) {
+        this.name = name;
+        contacts = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+
+    public void setContacts(ArrayList<Contact> contacts) {
+        this.contacts = contacts;
+    }
     public Contact createContact() {
 
         Scanner sc = new Scanner(System.in);
@@ -101,6 +121,9 @@ public class AddressBook {
         }
     }
 
+
+
+
     void display() {
         ArrayList<Contact> addressBook1 = new ArrayList<>();
 
@@ -108,4 +131,6 @@ public class AddressBook {
             System.out.println(person);
         }
     }
+
+
 }
