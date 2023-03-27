@@ -22,6 +22,10 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
+    public Contact() {
+
+    }
+
 
     public String getFirstName() {
         return firstName;
@@ -53,6 +57,38 @@ public class Contact {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setZipCode(int zipCode) {
+        this.zipCode = zipCode;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
