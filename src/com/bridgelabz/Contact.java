@@ -1,7 +1,12 @@
 package com.bridgelabz;
 
 public class Contact {
-    private String firstName, lastName, address, city, state, email;
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String email;
     private int zipCode;
     private String phoneNumber;
 
@@ -16,6 +21,7 @@ public class Contact {
         this.zipCode = zipCode;
         this.phoneNumber = phoneNumber;
     }
+
 
     public String getFirstName() {
         return firstName;
@@ -47,5 +53,19 @@ public class Contact {
 
     public String getEmail() {
         return email;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", email='" + email + '\'' +
+                ", zipCode=" + zipCode +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 }
